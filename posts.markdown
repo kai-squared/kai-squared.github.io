@@ -5,7 +5,7 @@ permalink: /posts/
 ---
 
 <ul class="listing">
-    {% for post in paginator.posts %}
+    {% for post in paginator._posts %}
     {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
     {% if year != y %}
     {% assign year = y %}
